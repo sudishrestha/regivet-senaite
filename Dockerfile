@@ -26,9 +26,11 @@ RUN mkdir -p $SENAITE_INSTANCE_HOME $SENAITE_FILESTORAGE $SENAITE_BLOBSTORAGE
 
 # Copy Buildout
 COPY requirements.txt buildout.cfg $SENAITE_INSTANCE_HOME/
-
 # Copy the build dependencies and startup scripts
+
 COPY build_deps.txt run_deps.txt docker-initialize.py docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
+
 
 # Note: we concatenate all commands to avoid multiple layer generation and reduce the image size
 RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \

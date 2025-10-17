@@ -3,18 +3,17 @@ version: "3.9"
 services:
 
   zeo:
-    image: senaite/senaite:2.x
+    image: sudishrestha/regvit-senaite:0.0.1
+    container_name: regvit-zeo
     command: zeo
     volumes:
       - ./data:/data
 
-  instance1:
-    image: senaite/senaite:2.x
-    volumes:
-#      -  "./buildoutcore.cfg:/home/senaite/senaitelims/src/senaite.core/buildout.cfg"
-      -  "./buildout.cfg:/home/senaite/senaitelims/buildout.cfg"
+  senaite:
+    container_name: regvit-senaite
+    image: sudishrestha/regvit-senaite:0.0.1
     ports:
-      - 8088:8080
+      - 9099:8080
     links:
       - zeo
     deploy:
