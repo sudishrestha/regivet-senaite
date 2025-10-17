@@ -1,16 +1,14 @@
-   backup
+installation
 
-sudo nano /usr/local/bin/auto_backup.sh
+      docker compose up -d
 
+backup
 
-sudo chmod +x /usr/local/bin/auto_backup.sh
-
-
-Test it manually:
-/usr/local/bin/auto_backup.sh
-
-crontab -e
-
-
-0 * * * * /usr/local/bin/auto_backup.sh >> /var/log/auto_backup.log 2>&1
+      sudo nano /usr/local/bin/auto_backup.sh
+      sudo chmod +x /usr/local/bin/auto_backup.sh
+      
+      Test it manually:
+            /usr/local/bin/auto_backup.sh
+      crontab -e
+         0 * * * * /usr/local/bin/auto_backup.sh >> /var/log/auto_backup.log 2>&1
 
