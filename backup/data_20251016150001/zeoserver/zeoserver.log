@@ -1,0 +1,297 @@
+2025-10-13T16:19:08 (37) created PID file '/data/zeoserver/zeoserver.pid'
+2025-10-13T16:19:08 (37) opening storage u'1' using FileStorage
+2025-10-13T16:19:08 (37) Blob directory /data/blobstorage does not exist. Selected `bushy` layout. 
+2025-10-13T16:19:08 (37) Blob directory '/data/blobstorage/' does not exist. Created new directory.
+2025-10-13T16:19:08 (37) Blob temporary directory '/data/blobstorage/tmp' does not exist. Created new directory.
+2025-10-13T16:19:08 StorageServer created RW with storages: 1:RW:/data/filestorage/Data.fs
+2025-10-13T16:19:08 listening on ('', 8080)
+2025-10-13T16:19:16 Connected server protocol
+2025-10-13T16:19:16 received handshake 'Z5'
+2025-10-14T05:56:48 Unexpected error while trying to resolve conflict on <ZODB.ConflictResolution.BadClass object at 0x704bcffe12d0>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 274, in tryToResolveConflict
+    inst = klass.__new__(klass, *newargs)
+TypeError: object.__new__(X): X is not a type object (BadClass)
+2025-10-14T05:56:48 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x27, class Products.CMFPlone.TypesTool.TypesTool, serial this txn started with 0x04042664b4dc7e66 2025-10-14 05:56:42.389368, serial currently committed 0x04042664c9753577 2025-10-14 05:56:47.216683)
+2025-10-14T05:56:48 (:8080) no current transaction: tpc_abort()
+2025-10-14T15:59:14 (36) created PID file '/data/zeoserver/zeoserver.pid'
+2025-10-14T15:59:14 (36) opening storage u'1' using FileStorage
+2025-10-14T15:59:14 (36) removed PID file '/data/zeoserver/zeoserver.pid'
+2025-10-14T16:00:32 (:8080) disconnected
+2025-10-14T16:01:01 (34) created PID file '/data/zeoserver/zeoserver.pid'
+2025-10-14T16:01:01 (34) opening storage u'1' using FileStorage
+2025-10-14T16:01:01 Ignoring index for /data/filestorage/Data.fs
+2025-10-14T16:01:01 StorageServer created RW with storages: 1:RW:/data/filestorage/Data.fs
+2025-10-14T16:01:01 listening on ('', 8080)
+2025-10-14T16:01:08 Connected server protocol
+2025-10-14T16:01:08 received handshake 'Z5'
+2025-10-14T16:04:35 (:8080) disconnected
+2025-10-14T16:04:42 Connected server protocol
+2025-10-14T16:04:42 received handshake 'Z5'
+2025-10-14T16:07:07 (:8080) disconnected
+2025-10-14T16:07:13 Connected server protocol
+2025-10-14T16:07:13 received handshake 'Z5'
+2025-10-14T16:11:21 (:8080) disconnected
+2025-10-14T16:11:34 Connected server protocol
+2025-10-14T16:11:34 received handshake 'Z5'
+2025-10-14T16:14:27 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:14:27 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x3a27, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428ce74fea7cc 2025-10-14 16:14:27.420644, serial currently committed 0x040428ce76ee9d00 2025-10-14 16:14:27.874707)
+2025-10-14T16:14:27 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:15:11 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:15:11 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x3a27, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428cf2f86abcc 2025-10-14 16:15:11.138920, serial currently committed 0x040428cf31483877 2025-10-14 16:15:11.550495)
+2025-10-14T16:15:11 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:15:55 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:15:55 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x3a27, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428cfec5d4555 2025-10-14 16:15:55.397892, serial currently committed 0x040428cfee13c1cc 2025-10-14 16:15:55.799338)
+2025-10-14T16:15:55 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:17:03 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:17:03 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x3b4d, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428d10d245744 2025-10-14 16:17:03.080146, serial currently committed 0x040428d10edb1e55 2025-10-14 16:17:03.481859)
+2025-10-14T16:17:03 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:17:33 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:17:33 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x3b4d, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428d18338a833 2025-10-14 16:17:30.754996, serial currently committed 0x040428d18cee4300 2025-10-14 16:17:33.030635)
+2025-10-14T16:17:33 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:25:35 Unexpected error while trying to resolve conflict on <type 'BTrees.IOBTree.IOBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:25:35 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x417c, class BTrees.IOBTree.IOBucket, serial this txn started with 0x040428d993cd29ee 2025-10-14 16:25:34.640958, serial currently committed 0x040428d995dc70aa 2025-10-14 16:25:35.123694)
+2025-10-14T16:25:35 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:26:01 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:26:01 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x40fe, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428da031b9a88 2025-10-14 16:26:00.728397, serial currently committed 0x040428da04d6f899 2025-10-14 16:26:01.134312)
+2025-10-14T16:26:01 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:27:20 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:27:20 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x42ef, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428db56c30b88 2025-10-14 16:27:20.334819, serial currently committed 0x040428db587d7066 2025-10-14 16:27:20.739843)
+2025-10-14T16:27:20 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:27:40 Unexpected error while trying to resolve conflict on <type 'BTrees.OIBTree.OIBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:27:40 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x42ef, class BTrees.OIBTree.OIBucket, serial this txn started with 0x040428db9e2581dd 2025-10-14 16:27:37.065589, serial currently committed 0x040428dba9b11d44 2025-10-14 16:27:39.771528)
+2025-10-14T16:27:40 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:29:09 Unexpected error while trying to resolve conflict on <type 'BTrees.IOBTree.IOBucket'>
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 286, in tryToResolveConflict
+    newstate = unpickler.load()
+UnpicklingError: NEWOBJ class argument isn't a type object
+2025-10-14T16:29:09 Bad request, 'vote'
+Traceback (most recent call last):
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/asyncio/server.py", line 103, in message_received
+    result = getattr(self.zeo_storage, name)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 374, in vote
+    return self.lock_manager.lock(self, self._vote)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 1168, in lock
+    result = func()
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 395, in _vote
+    getattr(self, op)(*args)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZEO-5.3.0-py2.7.egg/ZEO/StorageServer.py", line 529, in _store
+    self.storage.store(oid, serial, data, '', self.transaction)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/FileStorage/FileStorage.py", line 616, in store
+    oldserial, data)
+  File "/home/senaite/senaitelims/eggs/cp27mu/ZODB-5.8.0-py2.7.egg/ZODB/ConflictResolution.py", line 311, in tryToResolveConflict
+    data=newpickle)
+ConflictError: database conflict error (oid 0x42fa, class BTrees.IOBTree.IOBucket, serial this txn started with 0x040428dd2517c833 2025-10-14 16:29:08.693648, serial currently committed 0x040428dd27329733 2025-10-14 16:29:09.186942)
+2025-10-14T16:29:09 (:8080) no current transaction: tpc_abort()
+2025-10-14T16:38:57 (:8080) disconnected
+2025-10-14T16:39:13 Connected server protocol
+2025-10-14T16:39:13 received handshake 'Z5'
+2025-10-14T16:40:54 (:8080) disconnected
+2025-10-14T16:41:01 Connected server protocol
+2025-10-14T16:41:01 received handshake 'Z5'
+2025-10-14T16:43:50 (:8080) disconnected
+2025-10-14T16:44:04 Connected server protocol
+2025-10-14T16:44:04 received handshake 'Z5'
+2025-10-15T15:24:29 (36) created PID file '/data/zeoserver/zeoserver.pid'
+2025-10-15T15:24:29 (36) opening storage u'1' using FileStorage
+2025-10-15T15:24:29 StorageServer created RW with storages: 1:RW:/data/filestorage/Data.fs
+2025-10-15T15:24:29 listening on ('', 8080)
+2025-10-15T15:24:35 Connected server protocol
+2025-10-15T15:24:35 received handshake 'Z5'

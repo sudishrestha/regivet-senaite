@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+
+  zeo:
+    image: senaite/senaite:2.x
+    command: zeo
+    volumes:
+      - ./data:/data
+
+  instance1:
+    image: senaite/senaite:2.x
+    volumes:
+#      -  "./buildoutcore.cfg:/home/senaite/senaitelims/src/senaite.core/buildout.cfg"
+      -  "./buildout.cfg:/home/senaite/senaitelims/buildout.cfg"
+    ports:
+      - 8088:8080
+    links:
+      - zeo
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024MB
+    environment:
+      ZEO_ADDRESS: "zeo:8080"
+
+
+volumes:
+  data:
+    external: true
